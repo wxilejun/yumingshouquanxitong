@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台管理</title>
+
+    <!-- 框架文件 -->
+    <link rel="stylesheet" href="./css/layui.css">
+</head>
+<body>
+
+<div>
+<ul class="layui-nav layui-bg-blue" lay-bar="disabled">
+  <li class="layui-nav-item"><a href="">后台首页</a></li>
+  <li class="layui-nav-item"><a href="../index.php">首页</a></li>
+  <li class="layui-nav-item"><a href="https://xlj0.com">作者:XLJ</a></li>
+</ul>
+ 
+<p class="layui-elem-quote">作者已经没钱续费服务器了!!!&nbsp;项目代码无加密，无验证 <br> 希望你能支持下正版 -> 5元 -> <a href="https://shop.xlj0.com/mini.php?cid=6&tid=14" style="color: #1E9FFF;">下载程序</a><br><br>删除功能暂未开发，请手动前往 info/yuming.txt 删除，一个域名一个回车<br>后台账号密码手动前往 admin/index.php 修改</p>
+
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+  <legend>添加授权域名</legend>
+
+  <form action="./index.php" method="post" style="width: 70%; margin: 0 auto;">
+    <input type="text" name="yuming" required lay-verify="required" placeholder="域名" autocomplete="off" class="layui-input layui-anim layui-anim-fadein">
+    <button class="layui-btn layui-btn-normal layui-anim layui-anim-fadein" style="margin-top: 4px; display: block !important;">添加</button>
+  </form>
+</fieldset>
+ 
+<script>
+layui.use('element', function(){
+  var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+  
+  //监听导航点击
+  element.on('nav(demo)', function(elem){
+    //console.log(elem)
+    layer.msg(elem.text());
+  });
+});
+</script>
+</div>
+
+<script src="./js/layui.js"></script>
+
+</body>
+</html>

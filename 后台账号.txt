@@ -1,0 +1,4 @@
+后台账号:admin
+密码:shouquanxitong
+
+如果要修改，请到 ./admin/index.php 53 行 修改

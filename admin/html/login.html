@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>请先登录</title>
+
+    <!-- 框架文件 -->
+    <link rel="stylesheet" href="../css/layui.css">
+
+    <style>
+        form {
+            width: 70%;
+            margin: 0 auto auto auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="layui-form" action="../index.php" method="POST">
+        <input type="text" name="username" required lay-verify="required" placeholder="账号" autocomplete="off" class="layui-input layui-anim layui-anim-fadein">
+        <input type="password" name="password" required lay-verify="required" placeholder="密码" autocomplete="off" class="layui-input layui-anim layui-anim-fadein" style="margin-top: 2px;"><span style="display: none;">shouquanxitong0</span>
+        <button class="layui-btn layui-btn-normal layui-anim layui-anim-fadein" style="margin-top: 4px; display: block !important; width: 100%;">登录</button>
+    </form>
+
+<script src="../js/layui.js"></script>
+
+</body>
+</html>
